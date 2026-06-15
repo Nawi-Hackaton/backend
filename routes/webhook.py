@@ -664,8 +664,17 @@ async def flow_derivar_persona(sess: dict) -> str:
 # ---------------------------------------------------------------------------
 
 async def _finish(sender: str, response_text: str, sess: dict) -> None:
-    audio_bytes = await tts.synthesize(response_text)
-    await whatsapp.send_text_and_audio(sender, response_text, audio_bytes)
+    # Regla de Ñawi: texto + audio. Pero si el audio falla (p. ej. sin créditos de TTS),
+    # enviamos AL MENOS el texto, para no dejar al ciudadano sin respuesta.
+    try:
+        audio_bytes = await tts.synthesize(response_text)
+        await whatsapp.send_text_and_audio(sender, response_text, audio_bytes)
+    except Exception as exc:  # noqa: BLE001
+        print(f"[Ñawi] audio no disponible ({type(exc).__name__}); envío solo texto.")
+        try:
+            await whatsapp.send_text(sender, response_text)
+        except Exception as exc2:  # noqa: BLE001
+            print(f"[Ñawi] el envío de texto también falló: {type(exc2).__name__}: {exc2}")
     await session.save_session(sender, sess)
 
 
