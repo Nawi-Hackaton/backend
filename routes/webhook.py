@@ -233,6 +233,18 @@ async def process_message(sender: str, text: str, documento: bytes = None, docum
         await _finish(sender, saludo + await llm.generate_message("menu"), sess)
         return
 
+    # Un saludo SIEMPRE reinicia al menú, aun a mitad de un flujo (p. ej. atascado pidiendo
+    # DNI de un intento anterior). Es coincidencia exacta, así que un nombre o asunto reales
+    # no lo disparan. Sin esto, "Hola" caería en el manejador del estado y confundiría.
+    if _es_saludo(text):
+        sess["contador_no_entendi"] = 0
+        sess["datos_recolectados"] = {}
+        sess["estado_flujo"] = "MENU"
+        user = await database.get_user(sender)
+        saludo = "¡Hola de nuevo! " if user else (await llm.generate_message("bienvenida") + "\n\n")
+        await _finish(sender, saludo + await llm.generate_message("menu"), sess)
+        return
+
     # --- Estados en medio de un flujo: el mensaje es un dato, no una intención ---
 
     if estado == "INICIO":
@@ -255,15 +267,18 @@ async def process_message(sender: str, text: str, documento: bytes = None, docum
         dni = "".join(ch for ch in text if ch.isdigit())
         nombre = datos.get("nombre", "").strip()
         if not dni:
-            await _finish(sender, "Necesito tu número de DNI. ¿Me lo repites, por favor?", sess)
+            await _finish(sender, _demo("Necesito tu número de DNI. ¿Me lo repites, por favor?", DEMO_HINT_DNI), sess)
             return
         # Validación REAL contra RENIEC vía QELLQA.
         persona = await identity.validate_dni_reniec(dni, nombre)
         if not persona:
             await _finish(
                 sender,
-                "No pude validar tu identidad. Verifica que tu DNI y tu nombre coincidan con "
-                "tu documento. ¿Cuál es tu número de DNI?",
+                _demo(
+                    "No pude validar tu identidad. Verifica que tu DNI y tu nombre coincidan con "
+                    "tu documento. ¿Cuál es tu número de DNI?",
+                    DEMO_HINT_DNI,
+                ),
                 sess,
             )
             return
