@@ -520,13 +520,13 @@ async def flow_iniciar_tramite(sender: str, sess: dict) -> str:
 
     user = await database.get_user(sender)
     if not user:
-        # No tiene identidad validada: la validación (con módulo facial) vive en la web.
-        sess["estado_flujo"] = "MENU"
-        return (
-            "Para iniciar un trámite primero debo validar tu identidad. Por tu seguridad, la "
-            "validación se hace en nuestra página web:\n"
-            f"{WEB_URL}\n"
-            "Cuando termines de validarte, vuelve aquí y escríbeme para continuar con tu trámite."
+        # No tiene identidad validada: la validamos aquí mismo (nombre → DNI contra RENIEC).
+        # El módulo facial sigue siendo exclusivo de la web; en WhatsApp basta DNI + nombre.
+        sess["estado_flujo"] = "REGISTRO_NOMBRE"
+        return _demo(
+            "Para iniciar un trámite primero debo validar tu identidad. "
+            "¿Cuál es tu nombre completo?",
+            DEMO_HINT_DNI,
         )
 
     # Usuario ya validado: recuperamos sus datos y pasamos a términos.

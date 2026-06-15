@@ -14,6 +14,7 @@ Prueba directa (la parte offline, sin Supabase):
 
 import random
 import sys
+import unicodedata
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -32,6 +33,12 @@ from backend.services import database, qellqa, tts, whatsapp  # noqa: E402
 
 OTP_TABLE = "otp_sessions"
 OTP_TTL_MINUTES = 5
+
+
+def _sin_acentos(texto: str) -> str:
+    """Mayúsculas sin acentos para comparar nombres (MARÍA == MARIA, JOSÉ == JOSE)."""
+    nfkd = unicodedata.normalize("NFKD", (texto or "").upper())
+    return "".join(c for c in nfkd if not unicodedata.combining(c))
 
 
 # ---------------------------------------------------------------------------
@@ -58,14 +65,15 @@ async def validate_dni_reniec(dni: str, nombre_ingresado: str) -> dict | None:
     if not datos:
         return None
 
-    # Conjunto de tokens reales (nombres + apellidos + razón social).
-    reales = " ".join(
+    # Conjunto de tokens reales (nombres + apellidos + razón social), sin acentos para que
+    # "María" coincida con "MARIA".
+    reales = _sin_acentos(" ".join(
         str(datos.get(k) or "")
         for k in ("nombres", "apellidoPaterno", "apellidoMaterno", "razonSocial")
-    ).upper()
+    ))
     reales_tokens = set(reales.split())
 
-    ingresado = (nombre_ingresado or "").strip().upper()
+    ingresado = _sin_acentos(nombre_ingresado).strip()
     if not ingresado:
         # Sin nombre que comparar: el DNI existe, devolvemos los datos.
         return datos
