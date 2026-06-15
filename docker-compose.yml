@@ -1,0 +1,31 @@
+# Ñawi — backend autocontenido (repo "backend") con HTTPS automático (Caddy + Let's Encrypt).
+# Uso en la VM (dentro de la carpeta del repo backend):  docker compose up -d --build
+services:
+  backend:
+    build: .
+    restart: unless-stopped
+    env_file: .env                 # el .env vive en la VM (no en git)
+    expose:
+      - "8000"
+    volumes:
+      - chroma:/app/data/chroma_db  # persiste el RAG entre reinicios
+
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      DOMAIN: ${DOMAIN}            # tu dominio (ej. nawi-gore.duckdns.org), definido en .env
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - backend
+
+volumes:
+  chroma:
+  caddy_data:
+  caddy_config:

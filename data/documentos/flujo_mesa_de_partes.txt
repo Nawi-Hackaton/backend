@@ -1,0 +1,21 @@
+FLUJO DE ATENCIÓN - MESA DE PARTES - GOBIERNO REGIONAL CUSCO
+
+PRESENTAR UN TRÁMITE:
+1. El ciudadano presenta su documento en Mesa de Partes.
+2. Mesa de Partes revisa los requisitos y verifica la documentación.
+3. Si no cumple: se devuelve al usuario para subsanación.
+4. Si cumple: se registra en el Sistema de Trámite Documentario (STD)
+   y se genera el número de expediente.
+5. Mesa de Partes deriva el documento al área correspondiente.
+6. Se entrega al ciudadano el cargo de presentación con número de
+   expediente y fecha.
+
+CONSULTAR UN TRÁMITE:
+1. El ciudadano proporciona su número de expediente o DNI.
+2. El personal busca el expediente en el STD.
+3. Se informa: estado actual, fecha de ingreso, último movimiento,
+   oficina donde se encuentra.
+4. El ciudadano puede acudir a la oficina para seguimiento
+   o retirarse si solo necesitaba el estado.
+
+Horario: lunes a viernes de 8:00 a.m. a 4:30 p.m.

@@ -1,0 +1,239 @@
+TUPA - TEXTO ÚNICO DE PROCEDIMIENTOS ADMINISTRATIVOS
+GOBIERNO REGIONAL DE CUSCO
+Documento de referencia para el asistente Ñawi
+Fuente: Mesa de Partes Virtual del GORE Cusco (sistema QELLQA) e información pública
+
+IMPORTANTE PARA EL SISTEMA:
+Este documento contiene información pública de los trámites del Gobierno Regional de Cusco.
+No contiene datos personales de ciudadanos. La mayoría de los trámites de Mesa de Partes
+son GRATUITOS: presentar un documento o solicitud no tiene costo. Algunos procedimientos
+especializados con inspección pueden tener una tasa; en ese caso se indica en la ventanilla.
+
+---
+
+DEPENDENCIAS DEL GORE CUSCO (a las que se dirige un trámite)
+El trámite se dirige a una de estas 15 dependencias (nombre corto y completo):
+1. GORE - Sede Central del Gobierno Regional de Cusco
+2. GERESA - Gerencia Regional de Salud
+3. GRTPE - Gerencia Regional de Trabajo y Promoción del Empleo
+4. GEREDU - Gerencia Regional de Educación
+5. GREMH - Gerencia Regional de Energía, Minas e Hidrocarburos
+6. GERAGRI - Gerencia Regional de Agricultura
+7. GEREPRO - Gerencia Regional de la Producción
+8. GERCETUR - Gerencia Regional de Comercio Exterior y Turismo
+9. GRVCS - Gerencia Regional de Vivienda, Construcción y Saneamiento
+10. IMA - Instituto de Manejo de Agua y Medio Ambiente
+11. COPESCO - Plan COPESCO Regional
+12. MERISS - Proyecto Especial Regional Plan MERISS
+13. GRTC - Gerencia Regional de Transportes y Comunicaciones
+14. ZIMA - Proyecto Especial Regional
+15. UERSSC-VRAEM - Unidad Ejecutora del VRAEM
+
+---
+
+CÓMO INICIAR UN TRÁMITE EN LA MESA DE PARTES VIRTUAL
+1. Se presenta una SOLICITUD (u otro tipo de documento permitido).
+2. Se elige la dependencia correspondiente (de la lista de 15).
+3. Se elige el tipo de documento (por ejemplo: SOLICITUD, CARTA, INFORME, OFICIO).
+4. Se indica el asunto y el número de folios (hojas).
+5. Se adjunta el documento principal en formato PDF (tamaño máximo 10 MB).
+6. Se pueden agregar anexos como archivo o como enlace (URL).
+7. El sistema genera automáticamente un NÚMERO DE EXPEDIENTE.
+8. La notificación y el número de expediente llegan por correo electrónico.
+Horario de atención de la Mesa de Partes Virtual: lunes a viernes de 8:00 a.m. a 4:00 p.m.
+Costo: la presentación de documentos es gratuita.
+
+---
+
+TIPOS DE DOCUMENTO MÁS USADOS
+El sistema admite muchos tipos de documento. Los más usados por la ciudadanía son:
+SOLICITUD, CARTA, INFORME, OFICIO, CONSTANCIA, DECLARACIÓN JURADA, MEMORIAL, ACTA.
+Para un trámite común dirigido al GORE, lo habitual es presentar una SOLICITUD.
+
+---
+
+CÓMO CONSULTAR EL ESTADO DE UN EXPEDIENTE
+Para consultar el seguimiento de un trámite se necesitan TRES datos:
+1. El número de expediente.
+2. La dependencia donde se presentó.
+3. El año del expediente.
+Con esos datos, el sistema muestra la RUTA del expediente: origen, destino y acción de cada
+movimiento, con su fecha.
+Estados posibles de cada movimiento:
+- RECIBIDO: la oficina de destino ya recibió el documento.
+- SIN RECIBIR: el documento fue derivado pero aún está pendiente de recepción.
+- DERIVADO: el documento fue enviado a otra oficina (la acción indica a cuál, por ejemplo
+  "DERIVADO A: OADM" significa enviado a la Oficina de Administración).
+
+---
+
+TRÁMITE 1
+Nombre oficial: Certificado de trabajo
+Sinónimos: papel de trabajo, constancia laboral, constancia de trabajo, certificado laboral
+Dependencia sugerida: GRTPE - Gerencia Regional de Trabajo y Promoción del Empleo
+Descripción: Documento que acredita la relación laboral con el Gobierno Regional de Cusco.
+Tipo de documento a presentar: SOLICITUD
+Requisitos:
+1. Solicitud dirigida a la Gerencia Regional de Trabajo, indicando el motivo
+2. Copia simple del DNI vigente del solicitante
+Costo: Gratuito
+Plazo de atención referencial: 5 días hábiles
+Dónde se presenta: Mesa de Partes Virtual del GORE Cusco (sistema QELLQA)
+
+---
+
+TRÁMITE 2
+Nombre oficial: Constancia de no adeudo
+Sinónimos: constancia de no deuda, certificado de no adeudo, no adeudo
+Dependencia sugerida: GORE - Sede Central (Administración y Finanzas)
+Descripción: Certifica que el ciudadano o entidad no tiene deudas pendientes con el GORE.
+Tipo de documento a presentar: SOLICITUD
+Requisitos:
+1. Solicitud simple dirigida a la oficina de Administración y Finanzas
+2. Copia simple del DNI vigente
+3. Indicar el motivo por el cual se solicita la constancia
+Costo: Gratuito
+Plazo de atención referencial: 3 días hábiles
+Dónde se presenta: Mesa de Partes Virtual del GORE Cusco
+
+---
+
+TRÁMITE 3
+Nombre oficial: Certificado de habilidad profesional
+Sinónimos: habilidad profesional, certificado de colegiatura, estar hábil
+Dependencia sugerida: GRTPE - Gerencia Regional de Trabajo y Promoción del Empleo
+Descripción: Acredita que un profesional está habilitado para ejercer en la región Cusco.
+Tipo de documento a presentar: SOLICITUD
+Requisitos:
+1. Solicitud dirigida a la Gerencia Regional de Trabajo
+2. Copia simple del DNI vigente
+3. Copia del título profesional o constancia de egresado
+Costo: Gratuito
+Plazo de atención referencial: 7 días hábiles
+Dónde se presenta: Mesa de Partes Virtual del GORE Cusco
+
+---
+
+TRÁMITE 4
+Nombre oficial: Solicitud de información pública
+Sinónimos: acceso a la información, pedir información, solicitar documentos públicos, transparencia
+Dependencia sugerida: GORE - Sede Central (Transparencia y Acceso a la Información)
+Descripción: Permite a cualquier ciudadano solicitar información pública del GORE Cusco.
+Tipo de documento a presentar: SOLICITUD
+Requisitos:
+1. Solicitud indicando claramente qué información se requiere
+2. Copia simple del DNI del solicitante
+3. Indicar el formato en que desea recibir la información (digital o físico)
+4. Correo electrónico para la notificación
+Costo: Gratuito (puede haber costo de reproducción si se piden copias físicas)
+Plazo de atención referencial: 7 días hábiles (prorrogables en casos complejos)
+Base legal: Ley N° 27806 - Ley de Transparencia y Acceso a la Información Pública
+Dónde se presenta: Mesa de Partes Virtual del GORE Cusco
+
+---
+
+TRÁMITE 5
+Nombre oficial: Licencia de funcionamiento para establecimientos de salud privados
+Sinónimos: licencia de salud, autorización para clínica, permiso para establecimiento de salud
+Dependencia sugerida: GERESA - Gerencia Regional de Salud
+Descripción: Autorización para el funcionamiento de establecimientos de salud privados.
+Tipo de documento a presentar: SOLICITUD
+Requisitos:
+1. Solicitud dirigida a la Gerencia Regional de Salud
+2. Copia simple del DNI del representante legal
+3. Copia de la escritura pública de constitución de la empresa (si aplica)
+4. Plano de distribución del establecimiento
+5. Memoria descriptiva del establecimiento
+6. Copia del título del director médico responsable
+Costo: Sujeto a tasa por inspección (consultar en la ventanilla)
+Plazo de atención referencial: 30 días hábiles
+Base legal: Ley N° 26842 - Ley General de Salud
+Dónde se presenta: Mesa de Partes Virtual del GORE Cusco
+
+---
+
+TRÁMITE 6
+Nombre oficial: Autorización para aprovechamiento de recursos naturales
+Sinónimos: permiso para recursos naturales, autorización ambiental, permiso de extracción
+Dependencia sugerida: GREMH - Gerencia Regional de Energía, Minas e Hidrocarburos
+Descripción: Autorización para el uso y aprovechamiento sostenible de recursos naturales.
+Tipo de documento a presentar: SOLICITUD
+Requisitos:
+1. Solicitud dirigida a la dependencia competente
+2. Copia del DNI o RUC del solicitante
+3. Memoria descriptiva de la actividad a desarrollar
+4. Croquis de ubicación del área
+Costo: Sujeto a tasa según el tipo de recurso (consultar en la ventanilla)
+Plazo de atención referencial: 30 días hábiles
+Dónde se presenta: Mesa de Partes Virtual del GORE Cusco
+
+---
+
+TRÁMITE 7
+Nombre oficial: Registro de organizaciones sociales y comunidades campesinas
+Sinónimos: registro de comunidad, inscripción de organización social, registro comunal
+Dependencia sugerida: GORE - Sede Central (Desarrollo Social)
+Descripción: Inscripción o actualización de organizaciones sociales y comunidades campesinas.
+Tipo de documento a presentar: SOLICITUD
+Requisitos:
+1. Solicitud dirigida a la dependencia competente
+2. Acta de constitución o actualización (con firmas originales)
+3. Lista de integrantes con DNI
+4. Copia del DNI del representante legal o presidente
+Costo: Gratuito
+Plazo de atención referencial: 15 días hábiles
+Dónde se presenta: Mesa de Partes Virtual del GORE Cusco
+
+---
+
+TRÁMITE 8
+Nombre oficial: Postulación a becas de estudio regionales
+Sinónimos: beca regional, apoyo educativo, beca de estudios Cusco
+Dependencia sugerida: GEREDU - Gerencia Regional de Educación
+Descripción: Postulación a becas de estudio financiadas por el Gobierno Regional de Cusco.
+Tipo de documento a presentar: SOLICITUD
+Requisitos:
+1. Solicitud de postulación en el formato establecido
+2. Copia del DNI del postulante
+3. Certificado de estudios del último año cursado
+4. Constancia de domicilio en la región Cusco
+Costo: Gratuito
+Plazo de atención referencial: 45 días hábiles (proceso de selección)
+Dónde se presenta: Mesa de Partes Virtual del GORE Cusco o Gerencia Regional de Educación
+
+---
+
+INFORMACIÓN GENERAL DE LA MESA DE PARTES
+
+Mesa de Partes Virtual (sistema QELLQA): disponible para presentar documentos en línea.
+Horario de atención: lunes a viernes de 8:00 a.m. a 4:00 p.m.
+Sede central: Av. Tomasa Ttito Condemayta N° 1101, Distrito de Wanchaq, Cusco, Perú.
+Costo de presentar un documento: gratuito.
+
+Para consultar el estado de un expediente se necesita: número de expediente, dependencia y año.
+
+Por Ñawi puedes: consultar requisitos, iniciar un trámite (presentar una solicitud) y
+consultar el estado de tu expediente, en cualquier momento.
+
+---
+
+PREGUNTAS FRECUENTES
+
+¿Cuánto cuesta presentar un trámite?
+La presentación de documentos en la Mesa de Partes es gratuita. Solo algunos procedimientos
+especializados con inspección tienen una tasa, que se indica en la ventanilla.
+
+¿Cómo sé el estado de mi trámite?
+Necesitas tu número de expediente, la dependencia donde lo presentaste y el año. Con esos
+datos Ñawi te muestra la ruta del expediente y su estado actual.
+
+¿Qué es el número de expediente?
+Es el código único que identifica tu trámite. Se genera al presentar la solicitud y se envía
+a tu correo electrónico.
+
+¿En qué formato debo presentar mi documento?
+En PDF, con un tamaño máximo de 10 MB. Puedes agregar anexos como archivo o como enlace.
+
+¿Qué significan los estados de mi expediente?
+RECIBIDO: la oficina ya recibió tu documento. SIN RECIBIR: fue derivado y está pendiente de
+recepción. DERIVADO: fue enviado a otra oficina.

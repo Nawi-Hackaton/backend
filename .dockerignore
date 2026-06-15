@@ -1,0 +1,13 @@
+.git
+.env
+*.pem
+*.key
+__pycache__
+**/__pycache__
+*.pyc
+data/chroma_db
+*.log
+*.md
+requirements.txt
+assets
+model

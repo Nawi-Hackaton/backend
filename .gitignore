@@ -1,0 +1,18 @@
+# Secretos — NUNCA subir
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# RAG generado localmente
+data/chroma_db/
+
+# Logs y temporales
+*.log
+*.tmp

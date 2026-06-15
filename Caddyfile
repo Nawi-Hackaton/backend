@@ -1,0 +1,4 @@
+# Caddy obtiene y renueva el certificado HTTPS (Let's Encrypt) y hace de proxy al backend.
+{$DOMAIN} {
+	reverse_proxy backend:8000
+}
