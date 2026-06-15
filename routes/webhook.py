@@ -247,6 +247,13 @@ async def process_message(sender: str, text: str, documento: bytes = None, docum
 
     # --- Estados en medio de un flujo: el mensaje es un dato, no una intención ---
 
+    if estado == "REQUISITOS_CONSULTA":
+        # El usuario eligió "Consultar requisitos" y ahora dijo el trámite: lo resolvemos
+        # con el RAG y volvemos al menú (flow_consultar_requisitos deja estado=MENU).
+        response_text = await flow_consultar_requisitos(text, sess)
+        await _finish(sender, response_text, sess)
+        return
+
     if estado == "INICIO":
         user = await database.get_user(sender)
         if user:
@@ -468,11 +475,14 @@ async def process_message(sender: str, text: str, documento: bytes = None, docum
         return
 
     if estado == "MENU" and eleccion == "1":
-        sess["estado_flujo"] = "MENU"
+        # Dejamos la sesión a la espera del nombre del trámite; el siguiente mensaje se
+        # responde con el RAG (igual que la versión web).
+        sess["estado_flujo"] = "REQUISITOS_CONSULTA"
         await _finish(
             sender,
             "Claro. ¿De qué trámite quieres saber los requisitos? "
-            "Por ejemplo: certificado de trabajo.",
+            "Por ejemplo: certificado de trabajo, constancia de no adeudo o "
+            "certificado de habilidad. Dime el nombre y te digo qué necesitas.",
             sess,
         )
         return
